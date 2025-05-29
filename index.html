@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Auloora Portofolio </title> 
+    <link rel="icon" href="image/logo.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Custom css-->
+   <link rel="stylesheet" href="style.css">  
+   <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  </head>
+  <body>
+
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 px-8 py-4 flex justify-between items-center bg-transparent transition-all duration-500 ease-in-out">
+  <div class="flex items-center gap-2 transition-all duration-500 ease-in-out">
+    <img src="image/logo.png" alt="Logo" class="w-28 h-20 transition-all duration-500 ease-in-out" />
+  </div>
+  <ul class="hidden md:flex gap-8 text-sm font-medium text-gray-700 transition-colors duration-500 ease-in-out">
+    <li><a href="#Home" class="hover:text-purple-500 transition-colors duration-300">Home</a></li>
+    <li><a href="#About" class="hover:text-purple-500 transition-colors duration-300">About</a></li>
+    <li><a href="#Skil" class="hover:text-purple-500 transition-colors duration-300">Skil and Award</a></li>
+    <li><a href="#Portofolio" class="hover:text-purple-500 transition-colors duration-300">Portofolio</a></li>
+    <li><a href="#Contact" class="hover:text-purple-500 transition-colors duration-300">Contact</a></li>
+  </ul>
+</nav>
+
+
+
+    <!-- Hero Section -->
+<div class="bg-gradient-to-r from-indigo-100 to-pink-100 font-sans">
+  <section id="Home" class="flex flex-col md:flex-row items-center justify-center gap-12 px-6 md:px-20 py-16">
+    
+    <!-- Foto Profil dengan Lingkaran -->
+    <div class="relative w-[280px] h-[360px] flex items-center justify-center">
+      <div class="absolute top-[100px] w-[260px] h-[240px] bg-indigo-300 rounded-full z-0"></div>
+      <img src="image/image2.png" alt="Aura Fadila M" class="relative z-10 w-[260px] h-[340px] object-cover rounded-full" />
+    </div>
+
+    <!-- Text Content -->
+    <div class="max-w-lg text-center md:text-left">
+      <h1 class="text-3xl md:text-4xl font-semibold text-gray-800">Hello, I'm</h1>
+      <h2 id="typing-name" class="text-4xl md:text-5xl font-bold text-indigo-600 mt-1 h-[60px]"></h2>
+      <p class="text-sm text-gray-700 mt-4 leading-relaxed">
+        Creative web developer with 5 years of experience. Proficient in Tailwind, specializing in web development.
+        Proven to deliver visually stunning and effective work.
+      </p>
+      <a href="#About">
+        <button class="mt-6 px-6 py-2 bg-indigo-500 hover:bg-indigo-600 text-white text-sm rounded-full shadow-md transition">
+          Get Started
+        </button>
+      </a>
+    </div>
+  </section>
+</div>
+
+<!-- ABOUT SECTION -->
+<section class="flex items-center justify-between px-10 py-16 bg-white" id="About">
+  <!-- Teks -->
+  <div class="max-w-md" data-aos="fade-right" data-aos-duration="1000">
+    <p class="text-gray-500 text-sm text-justify">About me</p>
+    <h2 class="text-4xl font-bold text-gray-800 mb-4 text-justify">Closer to Me</h2>
+    <p class="text-gray-600 mb-4 text-justify">
+      Web professional with high dedication to quality and impactful results.
+      5 years of experience handling local & international projects.
+    </p>
+    <p class="text-indigo-600 font-semibold mb-2 text-justify">graduate</p>
+    <ul class="list-disc list-inside text-gray-700 text-sm space-y-1 mb-6 text-justify">
+      <li>Best Graduates of SMKN Tengaran <br> Software Engineering Department</li><br>
+      <li>Best Graduates of Gajah Mada University <br> Informatics Engineering/Web Development Study Program</li>
+    </ul>
+    <a href="readmore.html">
+      <button class="mt-6 px-6 py-2 bg-indigo-500 hover:bg-indigo-600 text-white text-sm rounded-full shadow-md transition">
+        Read More
+      </button>
+    </a>
+  </div>
+
+  <!-- Gambar & Background -->
+  <div class="relative w-[300px] h-[400px]" data-aos="fade-left" data-aos-duration="1000">
+    <!-- Background kapsul -->
+    <div class="absolute top-0 left-10 w-full h-full bg-indigo-300 rounded-t-full"></div>
+    <!-- Foto -->
+    <img src="image/image2.png" alt="Aura Fadila M"
+         class="relative z-10 w-[370px] h-[460px] object-cover -mt-10 ml-[40px]" />
+  </div>
+</section>
+
+
+<!--SKILL SECTION-->
+<section id="Skil">
+  <div class="px-10 py-12 font-sans bg-white">
+    <!-- Bagian Judul -->
+    <div class="mb-6">
+      <p class="text-gray-500 text-sm">Skill</p>
+      <h2 class="text-3xl font-bold text-gray-800">My skill</h2>
+    </div>
+
+    <!-- Bagian Diagram Skill -->
+    <div class="flex justify-center gap-24 flex-wrap mt-10">
+      
+      <!-- Skill: HTML -->
+      <div class="flex flex-col items-center skill-item">
+        <div class="relative w-[120px] h-[120px]">
+          <svg class="w-full h-full transform -rotate-90">
+            <circle cx="60" cy="60" r="50" stroke="#dbeafe" stroke-width="12" fill="none" />
+            <circle class="progress-ring" data-percentage="90"
+              cx="60" cy="60" r="50" stroke="#6366f1" stroke-width="12" fill="none"
+              stroke-dasharray="314.16" stroke-dashoffset="314.16" />
+          </svg>
+          <div class="absolute inset-0 flex items-center justify-center text-base font-semibold">90%</div>
+        </div>
+        <p class="mt-3 font-semibold">HTML</p>
+      </div>
+
+      <!-- Skill: CSS -->
+      <div class="flex flex-col items-center skill-item">
+        <div class="relative w-[120px] h-[120px]">
+          <svg class="w-full h-full transform -rotate-90">
+            <circle cx="60" cy="60" r="50" stroke="#dbeafe" stroke-width="12" fill="none" />
+            <circle class="progress-ring" data-percentage="90"
+              cx="60" cy="60" r="50" stroke="#6366f1" stroke-width="12" fill="none"
+              stroke-dasharray="314.16" stroke-dashoffset="314.16" />
+          </svg>
+          <div class="absolute inset-0 flex items-center justify-center text-base font-semibold">90%</div>
+        </div>
+        <p class="mt-3 font-semibold">CSS</p>
+      </div>
+
+      <!-- Skill: JavaScript -->
+      <div class="flex flex-col items-center skill-item">
+        <div class="relative w-[120px] h-[120px]">
+          <svg class="w-full h-full transform -rotate-90">
+            <circle cx="60" cy="60" r="50" stroke="#dbeafe" stroke-width="12" fill="none" />
+            <circle class="progress-ring" data-percentage="88"
+              cx="60" cy="60" r="50" stroke="#6366f1" stroke-width="12" fill="none"
+              stroke-dasharray="314.16" stroke-dashoffset="314.16" />
+          </svg>
+          <div class="absolute inset-0 flex items-center justify-center text-base font-semibold">88%</div>
+        </div>
+        <p class="mt-3 font-semibold">JavaScript</p>
+      </div>
+
+      <!-- Skill: Python -->
+      <div class="flex flex-col items-center skill-item">
+        <div class="relative w-[120px] h-[120px]">
+          <svg class="w-full h-full transform -rotate-90">
+            <circle cx="60" cy="60" r="50" stroke="#dbeafe" stroke-width="12" fill="none" />
+            <circle class="progress-ring" data-percentage="91"
+              cx="60" cy="60" r="50" stroke="#6366f1" stroke-width="12" fill="none"
+              stroke-dasharray="314.16" stroke-dashoffset="314.16" />
+          </svg>
+          <div class="absolute inset-0 flex items-center justify-center text-base font-semibold">91%</div>
+        </div>
+        <p class="mt-3 font-semibold">Python</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- AWARD -->
+
+<section class="py-10 px-4 " id="Skil" data-aos="fade-up" data-aos-duration="1000">
+    <div class="mb-6 ml-5">
+      <p class="text-gray-500 text-sm">Award</p>
+      <h2 class="text-3xl font-bold text-gray-800">Award</h2>
+    </div>
+
+    <div class="max-w-4xl mx-auto">
+      <div class="relative flex items-center justify-center">
+        <!-- Tombol Sebelumnya -->
+        <button onclick="prevImage()" class="absolute left-0 text-3xl font-bold text-gray-700 hover:text-black px-4 z-10">
+          &#x276E;
+        </button>
+
+        <!-- Gambar Sertifikat -->
+        <img
+          id="awardImage"
+          src=""
+          alt="Award Certificate"
+          onclick="updateDetails(currentIndex)"
+          class="w-[360px] shadow-lg rounded transition duration-300"
+        />
+
+        <!-- Tombol Selanjutnya -->
+        <button onclick="nextImage()" class="absolute right-0 text-3xl font-bold text-gray-700 hover:text-black px-4 z-10">
+          &#x276F;
+        </button>
+      </div>
+
+      <!-- Detail Sertifikat -->
+      <div id="awardDetail" class="text-gray-700 mt-4 text-lg font-medium hidden"></div>
+    </div>
+  </section>
+
+<!--PORTOFOLIO SECTION-->
+<!-- Container dibatasi -->
+ 
+<div class=" bg-white mx-auto px-4 py-6" >
+<section  id="Portofolio">
+  <!-- Judul -->
+  <div class="mb-6" style="margin-left: 20px;">
+     <p class="text-gray-500 text-sm">Work Result</p>
+     <h2 class="text-3xl font-bold text-gray-800">Portofolio</h2>
+  </div>
+
+  <!-- Tombol -->
+  <div class="flex flex-wrap gap-2 mb-4">
+    <button onclick="showContent('concert')" class="bg-[#B4B2F0] text-white px-3 py-1 rounded-full text-xs">concert</button>
+    <button onclick="showContent('history')" class="bg-[#B4B2F0] text-white px-3 py-1 rounded-full text-xs">history</button>
+    <button onclick="showContent('ecomer')" class="bg-[#B4B2F0] text-white px-3 py-1 rounded-full text-xs">ecomer</button>
+    <button onclick="showContent('travel')" class="bg-[#B4B2F0] text-white px-3 py-1 rounded-full text-xs">travel</button>
+    <button onclick="showContent('hospital')" class="bg-[#B4B2F0] text-white px-3 py-1 rounded-full text-xs">hospital</button>
+    <button onclick="showContent('travel2')" class="bg-[#B4B2F0] text-white px-3 py-1 rounded-full text-xs">Travel2</button>
+  </div>
+
+  <!-- Grid konten -->
+  <div class="grid grid-cols-3 gap-3" data-aos="fade-right" data-aos-duration="1000">
+    <!-- Gambar -->
+    <div class="col-span-2 bg-[#B4B2F0] rounded-2xl flex items-center justify-center min-h-[200px] p-3">
+      <a id="projectLink" href="#" target="_blank">
+        <img id="mainImage" src="image/portofolio/baner.png" class="rounded-lg max-w-full h-auto cursor-pointer" />
+      </a>
+    </div>
+
+    <!-- Deskripsi -->
+    <div class="bg-[#B4B2F0] rounded-2xl flex items-center justify-center text-center p-4">
+      <p id="description" class="text-white text-sm text-justify">Explanation for each project</p>
+    </div>
+  </div>
+</div>
+
+
+<!--testimonial section-->
+<!-- Judul -->
+ <div class="bg-white ">
+  <div class="mb-6  translate-y-[50px]" style="margin-left: 40px;">
+    <p class="text-gray-500 text-sm">What They Said</p>
+     <h2 class="text-3xl font-bold text-gray-800">Testimonial</h2>
+  </div>
+
+  <div class="flex flex-col items-center justify-center px-4 py-12 space-y-10">
+    <!-- Orbit Container -->
+    <div class="relative w-[360px] h-[240px] flex items-center justify-center">
+
+      <!-- Orbit Kiri -->
+      <div class="absolute left-0 top-1/2 translate-y-[40px] -translate-x-[15px] flex flex-col items-center gap-4">
+        <img src="image/testimonial/testimonial1.jpeg" data-index="0"
+             class="w-[60px] h-[60px] border-2 border-indigo-500 rounded-full object-cover cursor-pointer transition-transform duration-300 hover:scale-110 -translate-x-[150px]"  />
+        <img src="image/testimonial/testimonial2.jpeg" data-index="1"
+             class="w-[70px] h-[70px] border-2 border-indigo-500 rounded-full object-cover cursor-pointer transition-transform duration-300 hover:scale-110 -translate-x-[300px]" />
+        <img src="image/testimonial/testimonial3.jpeg" data-index="2"
+             class="w-[50px] h-[50px] border-2 border-indigo-500 rounded-full object-cover cursor-pointer transition-transform duration-300 hover:scale-110 -translate-x-[150px]" />
+      </div>
+
+      <!-- Orbit Kanan -->
+      <div class="absolute right-0 top-1/2 translate-y-[40px] translate-x-[15px] flex flex-col items-center gap-4">
+        <img src="image/testimonial/testimonial4.jpeg" data-index="3"
+             class="w-[60px] h-[60px] border-2 border-indigo-500 rounded-full object-cover cursor-pointer transition-transform duration-300 hover:scale-110 translate-x-[150px]" />
+        <img src="image/testimonial/testimonial5.jpeg" data-index="4"
+             class="w-[70px] h-[70px] border-2 border-indigo-500 rounded-full object-cover cursor-pointer transition-transform duration-300 hover:scale-110 translate-x-[300px]" />
+        <img src="image/testimonial/testimonial1.jpeg" data-index="0"
+             class="w-[50px] h-[50px] border-2 border-indigo-500 rounded-full object-cover cursor-pointer transition-transform duration-300 hover:scale-110 translate-x-[150px]" />
+      </div>
+
+      <!-- Gambar Utama -->
+      <img id="main-image" src="image/testimonial/testimonial1.jpeg"
+           class="w-32 h-32 border-2 border-indigo-500 rounded-full object-cover z-10 cursor-pointer transition-transform duration-500 ease-in-out hover:scale-105" data-aos="fade-up" data-aos-duration="1000"/>
+    </div>
+
+    <!-- Teks Testimonial -->
+    <div id="testimonial-text"
+         class="text-center max-w-xl text-gray-700 italic px-4 transition-opacity duration-500 ease-in-out" data-aos="fade-up" data-aos-duration="1000">
+      Excellent cooperation. Our project was handled quickly and the quality was very satisfactory.
+    </div>
+
+    <!-- Garis -->
+    <div class="w-24 h-[2px] bg-gray-300"></div>
+
+    <!-- Info Klien -->
+    <div id="client-info" class="text-center space-y-1">
+      <h5 id="client-name" class="text-lg font-semibold text-gray-800">Liam Carter</h5>
+      <span id="client-profession" class="text-sm text-gray-500"></span>
+    </div>
+
+    <!-- Navigasi Dot -->
+    <div id="testimonial-navigation" class="flex justify-center gap-3 mt-4"></div>
+  </div>
+ </div>
+
+ <!-- work Pilosopy-->
+  <div class="bg-[#B4B2F0] py-8 px-6 rounded-md shadow-md flex flex-col items-center justify-center mx-auto"
+         style="max-width: 1300px; width: 100%; height: 200px;">
+        <h2 class="text-white text-2xl font-sans font-semibold mb-4 text-center">Work Philosophy!!!</h2>
+        <a href="Work Philosophy.html">
+        <button class="mt-6 px-6 py-2 bg-indigo-500 hover:bg-indigo-600 text-white text-sm rounded-full shadow-md transition">
+          read
+        </button>
+        </a>
+    </div>
+ </section>
+
+
+
+    <!--contact-->
+    <!-- Bagian Contact -->
+     <section id="Contact">
+     <div class="bg-white  mt-16" >
+    <div class="max-w-6xl w-full space-y-6 mx-auto"> 
+
+  <!-- Judul Atas -->
+  <div class="mb-6">
+    <p class="text-gray-500 text-sm">contact me for collaboration</p>
+    <h2 class="text-3xl font-bold text-gray-800">Contact</h2>
+  </div>
+
+  <!-- Dua Kolom -->
+  <div class="w-full flex flex-col md:flex-row bg-white">
+
+    <!-- Kiri: Information -->
+    <div class="w-full md:w-1/2 bg-white p-8 space-y-6" data-aos="fade-up" data-aos-duration="1000">
+      <div>
+        <h2 class="text-3xl font-semibold text-gray-800">Information</h2>
+        <p class="text-xs text-gray-500">account and location</p>
+      </div>
+
+      <!-- Account -->
+      <div class="space-y-4 pt-2">
+        <p class="text-sm font-semibold text-gray-700">account</p>
+        <div class="flex items-center space-x-3 text-sm text-gray-600">
+          <img src="image/icon/phone.png" alt="phone" class="w-4 h-4" />
+          <span>+62 858-0517-0971</span>
+        </div>
+        <div class="flex items-center space-x-3 text-sm text-gray-600">
+          <img src="image/icon/email.png" alt="email" class="w-4 h-4" />
+          <span>auurrau@gmail.com</span>
+        </div>
+        <div class="flex items-center space-x-3 text-sm text-gray-600">
+          <img src="image/icon/github.png" alt="github" class="w-4 h-4" />
+          <span>auurrau</span>
+        </div>
+      </div>
+
+      <!-- Location -->
+      <div class="pt-6">
+        <p class="text-sm font-semibold text-gray-700 mb-2">location</p>
+        <img 
+          src="image/icon/Screenshot_2025-05-12_184320-removebg-preview.png" 
+          alt="map" 
+          class="w-3/4 rounded-md cursor-pointer transition duration-300 hover:scale-105"
+          onclick="animateAndOpenModal(this)"
+        />
+      </div>
+    </div>
+
+    <!-- Kanan: Get in Touch -->
+    <!-- Contact Form Section -->
+<div class="w-full md:w-1/2 bg-white p-8 flex flex-col justify-start" data-aos="fade-down" data-aos-duration="1000">
+  <h2 class="text-3xl font-semibold text-gray-800">Get in Touch</h2>
+  <p class="text-sm text-gray-600 mb-6">Use the form below to get in touch with <strong>me</strong></p>
+
+  <form id="contactForm" action="https://formsubmit.co/auurrau@gmail.com" method="POST" class="space-y-4">
+    <!-- Hidden to disable captcha -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <input type="text" name="name" placeholder="Your name" required
+      class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-400" />
+    <input type="email" name="email" placeholder="Email Address" required
+      class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-400" />
+    <input type="text" name="phone" placeholder="Phone Number"
+      class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-400" />
+    <textarea name="message" placeholder="Write your subject here" required
+      class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm h-28 resize-none focus:outline-none focus:ring-2 focus:ring-purple-400"></textarea>
+
+    <button type="submit"
+      class="w-full bg-[#B4B2F0] hover:bg-purple-500 text-white font-semibold py-2 rounded-md transition">SUBMIT</button>
+  </form>
+</div>
+
+<!-- Notification -->
+<div id="notification"
+  class="fixed top-5 right-5 bg-[#B4B2F0] text-white px-6 py-4 rounded-lg shadow-lg flex items-center gap-3 opacity-0 pointer-events-none transition-all duration-500 transform translate-y-[-20px] z-50">
+  <svg class="w-6 h-6 text-white animate-bounce" fill="none" stroke="currentColor" stroke-width="2"
+    viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+  </svg>
+  <span class="font-semibold">The message has been sent!</span>
+</div>
+</div>
+
+<!-- Modal -->
+<div id="locationModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+  <div id="modalContent" class="bg-white p-6 rounded-md w-80 relative opacity-0">
+    <button onclick="closeModal()" class="absolute top-2 right-2 text-gray-400 hover:text-gray-600 text-xl">&times;</button>
+    <h3 class="text-lg font-semibold mb-2">📍 Residence Location</h3>
+    <p class="text-sm text-gray-700">I live in Kab.Semarang, Kec.Tengaran, Desa Sruwen, Dusun Durensawit</p>
+  </div>
+</div>
+     </div>
+     </section>
+
+
+
+     <footer class="bg-[#B4B2F0] text-white rounded-t-3xl px-6 md:px-20 py-10">
+  <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-10">
+
+    <!-- Logo dan Newsletter -->
+    <div class="md:w-1/3 space-y-4">
+      <div class="flex items-center space-x-2">
+        <img src="image/logo.png" alt="logo" class="w-20 h-30" />
+        <h2 class="text-lg font-semibold">AULLORA</h2>
+      </div>
+      <p class="text-sm">send your email to cooperate</p>
+      <form class="flex mt-2">
+        <input type="email" placeholder="Enter your email" class="rounded-full px-4 py-2 w-full text-gray-700 text-sm focus:outline-none" />
+        <button type="submit" class="bg-white text-gray-700 ml-2 px-3 py-2 rounded-full text-sm font-bold hover:bg-gray-200"> <a href="#Home">🔝</a></button>
+      </form>
+    </div>
+
+    <!-- Links -->
+    <div class="grid grid-cols-3 gap-8 text-sm">
+      <div>
+        <h3 class="font-semibold mb-2">navy</h3>
+        <ul class="space-y-1 text-white/80 duration-500 ease-in-out">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Skil">Skil and Award</a></li>
+          <li><a href="#Portofolio">Portofolio</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-2">Documentation</h3>
+        <ul class="space-y-1 text-white/80">
+          <li><a href="portofolio/concert/ind.html">Concert</a></li>
+          <li><a href="portofolio/history website/Web kolaborasi/kelompok6 kolaborasi/kelompok6(1).html">History</a></li>
+          <li><a href="portofolio/ecomers/indxcoba.html">Ecomers</a></li>
+          <li><a href="portofolio/travel1/index.html">Travel1</a></li>
+          <li><a href="portofolio/hospital/zindex.html">Hospital</a></li>
+          <li><a href="portofolio/travel2/index.html">Travel2</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-2">Social</h3>
+        <ul class="space-y-1 text-white/80">
+          <li><a href="#Contact">telepon</a></li>
+          <li><a href="#Contact">email</a></li>
+          <li><a href="#Contact">github</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Garis dan Footer Kecil -->
+  <div class="border-t border-white/30 mt-8 pt-4 flex justify-between text-xs text-white/70 flex-wrap gap-2">
+    <p>© Wardiere Inc. All Rights Reserved 2023</p>
+    <p>Terms & Conditions</p>
+    <p>Designed by <span class="font-semibold text-white">Aura Fadila</span></p>
+  </div>
+</footer>
+
+
+
+<!--Custom  JavaScript -->
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+  </body>
+</html>
